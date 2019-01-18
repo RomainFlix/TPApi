@@ -34,7 +34,7 @@ class FilmController {
                 "annee"=>"14/12/2118",
                 "poster"=>"28/03/2974",
                 "synopsis"=>"Super tozureizzer",
-                "catégorie"=>"Sciences",
+                "categorie"=>"Sciences",
             ],
         ];
         $jsonResponse=json_encode($films);
