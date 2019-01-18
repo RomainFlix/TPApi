@@ -22,3 +22,8 @@ Pour voir l'ensemble des routes
 ```
  php bin/console debug:router
 ```
+## Route Interface Client
+Pour voir l'ensemble des interfaces
+```
+ public/acteur.html || public/film.html
+```
