@@ -1,0 +1,74 @@
+categories:
+    path: /categories
+    methods: [GET]
+    controller: App\Controller\CategorieController::getAllCategories
+
+categorie:
+    path: /categories/{id}
+    methods: [GET]
+    controller: App\Controller\CategorieController::getCategorie
+
+categorie_delete:
+    path: /categories/{id}
+    methods: [DELETE]
+    controller: App\Controller\CategorieController::deleteCategorie
+
+categorie_create:
+    path: /categories
+    methods: [POST]
+    controller: App\Controller\CategorieController::createCategorie
+
+categorie_update:
+    path: /categories/{id}
+    methods: [PUT]
+    controller: App\Controller\CategorieController::updateCategorie
+
+acteurs:
+    path: /acteurs
+    methods: [GET]
+    controller: App\Controller\ActeurController::getAllActeurs
+
+acteur:
+    path: /acteurs/{id}
+    methods: [GET]
+    controller: App\Controller\ActeurController::getActeur
+
+acteur_delete:
+    path: /acteurs/{id}
+    methods: [DELETE]
+    controller: App\Controller\ActeurController::deleteActeur
+
+acteur_create:
+    path: /acteurs
+    methods: [POST]
+    controller: App\Controller\ActeurController::createActeur
+
+acteur_update:
+    path: /acteurs/{id}
+    methods: [PUT]
+    controller: App\Controller\ActeurController::updateActeur
+
+films:
+    path: /films
+    methods: [GET]
+    controller: App\Controller\FilmController::getAllFilms
+
+film:
+    path: /films/{id}
+    methods: [GET]
+    controller: App\Controller\FilmController::getFilm
+
+film_delete:
+    path: /films/{id}
+    methods: [DELETE]
+    controller: App\Controller\FilmController::deleteFilm
+
+film_create:
+    path: /films
+    methods: [POST]
+    controller: App\Controller\FilmController::createFilm
+
+film_update:
+    path: /films/{id}
+    methods: [PUT]
+    controller: App\Controller\FilmController::updateFilm
