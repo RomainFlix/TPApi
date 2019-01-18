@@ -20,14 +20,17 @@ class ActeurController {
     function getAllActeurs() {
         $acteurs=[
             [
+                "id"=>"1",
                 "nom"=>"Flix",
                 "prenom"=>"Romain",
             ],
             [
+                "id"=>"2",
                 "nom"=>"Khechine",
                 "prenom"=>"Ryad",
             ],
             [
+                "id"=>"3",
                 "nom"=>"Umtiti",
                 "prenom"=>"Samuel",
             ],

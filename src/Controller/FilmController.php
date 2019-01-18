@@ -20,6 +20,7 @@ class FilmController {
     function getAllFilms() {
         $films=[
             [
+                "id"=>"1",
                 "titre"=>"Harry potter",
                 "annee"=>"14/02/2018",
                 "poster"=>"15/03/2019",
@@ -27,6 +28,7 @@ class FilmController {
             ],
 
             [
+                "id"=>"2",
                 "titre"=>"Richard",
                 "annee"=>"14/12/2118",
                 "poster"=>"28/03/2974",

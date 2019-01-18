@@ -13,49 +13,59 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-
 /**
  * @Route("/categories")
  */
 class CategorieController {
     function getAllCategories() {
-        $categories= [
-            ["name" => "Fiction"],
-            ["name" => "Fantastique"],
-            ["name" => "Sciences"],
+        $categories=[
+            [
+                "id"=>"1",
+                "name"=>"Fiction",
+            ],
+            [
+                "id"=>"2",
+                "name"=>"Fantastique",
+            ],
+            [
+                "id"=>"3",
+                "name"=>"Sciences",
+            ],
         ];
-        $jsonResponse = json_encode($categories);
+        $jsonResponse=json_encode($categories);
+
         return new Response($jsonResponse);
     }
 
     function getCategorie($id) {
-        $categorie= [
-            "id" => $id,
-            "name" => "Catégorie ".$id
+        $categorie=[
+            "id"=>$id,
+            "nom"=>"Catégorie ".$id,
         ];
 
-        $jsonResponse = json_encode($categorie);
+        $jsonResponse=json_encode($categorie);
 
         return new Response($jsonResponse);
     }
 
-    function deleteCategorie($id){
-        $jsonResponse = json_encode([]);
+    function deleteCategorie($id) {
+        $jsonResponse=json_encode([]);
+
         return new Response($jsonResponse);
     }
 
-    function createCategorie(Request $request){
-        $body = $request -> getContent();
-        $body = json_decode($body);
-        $jsonResponse = json_encode([]);
+    function createCategorie(Request $request) {
+        $body=$request->getContent();
+        $body=json_decode($body);
+        $jsonResponse=json_encode([]);
 
         return new Response($jsonResponse, 201);
     }
 
-    function updateCategorie(Request $request){
-        $body = $request -> getContent();
-        $body = json_decode($body);
-        $jsonResponse = json_encode([]);
+    function updateCategorie(Request $request) {
+        $body=$request->getContent();
+        $body=json_decode($body);
+        $jsonResponse=json_encode([]);
 
         return new Response($jsonResponse);
     }
